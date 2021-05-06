@@ -9,8 +9,8 @@
                 <form action="{{ route('catalog') }}" method="get" class="categories-form d-flex flex-column position-relative">
                     @foreach($cat as $f)
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="{{ $f->id }}" value="{{ $f->id }}" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" name="{{ $f->id }}" value="{{ $f->id }}" id="defaultCheck{{ $f->id }}">
+                            <label class="form-check-label" for="defaultCheck{{$f->id}}">
                                 {{ $f->name }}
                             </label>
                         </div>

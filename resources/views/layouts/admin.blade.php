@@ -26,9 +26,6 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
                 <div class="navbar-nav  menu justify-content-center">
-                    <a class="nav-item nav-link" href="{{ route('admin') }}">Товары</a>
-                    <a class="nav-item nav-link ml-lg-5 ml-md-0" href="#">Категории</a>
-
 
                 </div>
                 <div class="navbar-nav ">

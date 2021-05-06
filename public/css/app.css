@@ -145,15 +145,15 @@ footer .row .footer-4 .created {
   height: 100%;
 }
 .cat-item .cat-item__img {
-
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 .cat-item .cat-item__img img {
-    width: auto;
-    height: 250px;
+  height: 250px;
+  width: auto;
 }
 
 .product-weak .owl-carousel {
@@ -583,6 +583,19 @@ footer .row .footer-4 .created {
   color: #3d3c9b !important;
 }
 
+.composition {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 425px) {
+  .product-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-flex .product-desc {
+    padding: 1.5rem;
+  }
+}
 .admin-form {
   min-width: 320px;
   padding: 20px;
