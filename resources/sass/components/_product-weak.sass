@@ -1,0 +1,139 @@
+.cat-item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    border: #d5d5dd solid 1px
+    box-sizing: border-box
+    padding: 5px
+    border-radius: 10px
+    height: 100%
+
+    .cat-item__img
+        height: 250px
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+
+        img
+            height: 250px
+.product-weak .owl-carousel
+    position: relative
+    padding: 0 35px
+
+    @media screen and (max-width: 780px)
+        padding: 0 10px
+
+    .owl-stage-outer
+        padding: 2px
+    .owl-dots
+        display: none
+
+    .owl-stage
+        display: flex
+        align-items: stretch
+
+    .owl-nav
+        display: block
+        height: 100%
+        width: 100%
+        .owl-next
+            position: absolute
+            width: 20px
+            top: 50%
+            right: 0
+            opacity: 0.7
+
+            @media screen and (max-width: 1170px)
+                right: 5px
+
+        .owl-prev
+            position: absolute
+            width: 20px
+            top: 50%
+            left: 0
+            opacity: 0.7
+
+            @media screen and (max-width: 1170px)
+                left: 5px
+
+        @media screen and (max-width: 780px)
+            display: none
+
+.product-weak
+    padding: 50px 0
+
+    .title
+        text-align: center
+        font-size: 25px
+        margin-bottom: 45px
+
+.cat-item__label
+    padding: 15px 10px
+    transition: 0.5s ease-out color
+
+    &:hover
+        text-decoration: none
+        color: $purple !important
+        transition: 0.5s ease-out color
+
+    .cat-item__title
+        font-size: 20px
+        font-weight: 600
+
+    .cat-item__text
+        margin-top: 15px
+        color: #545454
+
+.cat-item__price
+    padding: 10px
+    justify-self: flex-end
+    .item-price
+        font-size: 1.375rem
+        font-weight: 500
+        font-family: 'Montserrat', sans-serif
+
+        .cent
+            font-weight: 400
+            font-size: 1.125rem
+
+
+            .rub
+                font-size: 1.375rem
+                font-weight: 500
+
+.cat-item__wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-top: 15px
+    flex-grow: 2
+
+    .wrap2
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+.cat-item__cart, .product-cart
+    margin: 10px
+    padding: 10px
+    font-size: 15px
+    text-transform: uppercase
+    font-family: "Source Sans Pro", sans-serif
+    font-weight: 600
+    border-radius: 25px
+    color: #4a4a4a
+    border: #4a4a4a 2px solid
+    background: #FFFFFF
+    transition: background 0.5s
+    box-sizing: content-box
+
+    &:focus
+        outline: none
+
+    &:hover
+        background: $grad
+        color: $white
+        border: $white 2px solid
+        transition: background 0.5s

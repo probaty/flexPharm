@@ -1,0 +1,44 @@
+header
+    border-bottom: solid 2px $purple
+    font-weight: 600
+    font-size: 18px
+    padding: 20px 0
+
+    .wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 100%
+
+    .logo
+        width: 200px
+
+        img
+            width: 100%
+
+    .menu
+        flex-grow: 2
+
+    .store
+        @media screen and (max-width: 800px)
+            margin-top: 1rem
+
+        border: $purple 2px solid
+        border-radius: 20px
+        color: $purple !important
+        transition: 0.5s
+
+        @media screen and (max-width: 1000px)
+            padding-right: 10px !important
+            padding-left: 10px !important
+            width: 180px
+
+        span
+            color: inherit
+
+        img
+            width: 25px
+
+        &:hover
+            background: #e2e0ff
+            transition: 0.5s
